@@ -789,13 +789,17 @@ function genericFaq(course) {
   ];
 }
 
+function getCoursePageImports() {
+  return `import Link from '@docusaurus/Link';`;
+}
+
 function createPageNav(course, includeOverviewLink = true) {
   const links = [
-    `<a href="${getCourseCatalogPath(course)}">Back to ${titleCaseLevel(course.level)} courses</a>`,
+    `<Link to="${getCourseCatalogPath(course)}">Back to ${titleCaseLevel(course.level)} courses</Link>`,
   ];
 
   if (includeOverviewLink) {
-    links.push(`<a href="${getCourseOverviewPath(course)}">Course overview</a>`);
+    links.push(`<Link to="${getCourseOverviewPath(course)}">Course overview</Link>`);
   }
 
   return `<div className="course-page-nav">\n  ${links.join('\n  ')}\n</div>`;
@@ -832,10 +836,10 @@ function createOverviewQuickLinks(course) {
 
   const cards = quickLinks
     .map(
-      (link) => `  <a className="course-quick-link" href="${link.href}">
+      (link) => `  <Link className="course-quick-link" to="${link.href}">
     <strong>${link.title}</strong>
     <span>${link.description}</span>
-  </a>`,
+  </Link>`,
     )
     .join('\n');
 
@@ -863,6 +867,8 @@ description: Course entry point for ${escapeForFrontMatter(course.title)}.
 slug: /${course.level}/${slug}
 sidebar_position: 1
 ---
+
+${getCoursePageImports()}
 
 ${createPageNav(course, false)}
 
@@ -906,6 +912,8 @@ description: Syllabus overview for ${escapeForFrontMatter(course.title)}.
 sidebar_position: 1
 ---
 
+${getCoursePageImports()}
+
 ${createPageNav(course)}
 
 # Syllabus
@@ -942,6 +950,8 @@ description: Teaching sequence for ${escapeForFrontMatter(course.title)}.
 sidebar_position: 2
 ---
 
+${getCoursePageImports()}
+
 ${createPageNav(course)}
 
 # Schedule
@@ -963,6 +973,8 @@ title: Lectures
 description: Lecture blocks for ${escapeForFrontMatter(course.title)}.
 sidebar_position: 1
 ---
+
+${getCoursePageImports()}
 
 ${createPageNav(course)}
 
@@ -990,6 +1002,8 @@ description: Practical work for ${escapeForFrontMatter(course.title)}.
 sidebar_position: 2
 ---
 
+${getCoursePageImports()}
+
 ${createPageNav(course)}
 
 # Labs
@@ -1016,6 +1030,8 @@ description: Assignment structure for ${escapeForFrontMatter(course.title)}.
 sidebar_position: 1
 ---
 
+${getCoursePageImports()}
+
 ${createPageNav(course)}
 
 # Assignments
@@ -1039,6 +1055,8 @@ title: Readings
 description: Readings and materials for ${escapeForFrontMatter(course.title)}.
 sidebar_position: 1
 ---
+
+${getCoursePageImports()}
 
 ${createPageNav(course)}
 
@@ -1065,6 +1083,8 @@ title: FAQ
 description: Frequently asked questions for ${escapeForFrontMatter(course.title)}.
 sidebar_position: 2
 ---
+
+${getCoursePageImports()}
 
 ${createPageNav(course)}
 
