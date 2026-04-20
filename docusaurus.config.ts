@@ -11,10 +11,10 @@ const config: Config = {
   future: {
     v4: true,
   },
-  url: 'https://courses.example.com',
-  baseUrl: '/',
-  organizationName: 'teaching-portal',
-  projectName: 'course-website',
+  url: 'https://mazarbaloch.github.io',
+  baseUrl: '/hamk-teaching-portal/',
+  organizationName: 'mazarbaloch',
+  projectName: 'hamk-teaching-portal',
   onBrokenLinks: 'throw',
   i18n: {
     defaultLocale: 'en',
