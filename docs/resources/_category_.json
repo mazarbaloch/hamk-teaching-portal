@@ -1,0 +1,9 @@
+{
+  "label": "Resources",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "Shared Resources",
+    "description": "Cross-course material for operations, design, assessment, and semester planning."
+  }
+}

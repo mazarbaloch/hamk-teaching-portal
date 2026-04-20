@@ -1,0 +1,66 @@
+.page {
+  background: var(--portal-background);
+}
+
+.shell {
+  width: min(1200px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 2rem 0 5rem;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.summaryCard {
+  padding: 1.35rem;
+  border-radius: 24px;
+  border: 1px solid var(--portal-border-strong);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--portal-shadow-soft);
+}
+
+.summaryLabel {
+  color: var(--portal-text-subtle);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.summaryValue {
+  margin-top: 0.7rem;
+  color: var(--portal-text-strong);
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.summaryCard p {
+  margin: 0.8rem 0 0;
+  color: var(--portal-text-soft);
+  line-height: 1.75;
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+.gridWrap {
+  margin-top: 1.4rem;
+}
+
+@media (max-width: 920px) {
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .shell {
+    width: calc(100% - 24px);
+  }
+}

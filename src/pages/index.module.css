@@ -1,0 +1,177 @@
+.page {
+  background: #f6f8fc;
+}
+
+.shell {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 2.2rem 0 5rem;
+}
+
+.intro {
+  padding: 0.15rem 0 0.35rem;
+}
+
+.introBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.72rem;
+  border-radius: 999px;
+  background: var(--portal-blue-soft);
+  color: var(--portal-blue-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.introTitle {
+  margin: 1rem 0 0;
+  color: var(--portal-text-strong);
+  font-size: clamp(2.15rem, 4vw, 2.95rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.introDescription {
+  max-width: 52rem;
+  margin: 1rem 0 0;
+  color: var(--portal-text-strong);
+  font-size: 1.02rem;
+  font-weight: 500;
+  line-height: 1.82;
+}
+
+.introSecondary {
+  max-width: 54rem;
+  margin: 0.55rem 0 0;
+  color: var(--portal-text-soft);
+  font-size: 0.98rem;
+  line-height: 1.82;
+}
+
+.introActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.95rem;
+  padding: 0.74rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.primaryAction {
+  border: 1px solid rgba(159, 176, 214, 0.92);
+  background: #ffffff;
+  color: var(--portal-text-strong);
+  box-shadow: 0 8px 18px rgba(30, 41, 59, 0.04);
+}
+
+.secondaryAction {
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--portal-accent);
+}
+
+.primaryAction:hover,
+.secondaryAction:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.primaryAction:hover {
+  border-color: rgba(116, 142, 198, 0.96);
+  box-shadow: 0 12px 22px rgba(30, 41, 59, 0.06);
+}
+
+.section {
+  margin-top: 3.6rem;
+}
+
+.blockSpacing {
+  margin-top: 1.4rem;
+}
+
+.quickLinksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.quickLinkCard {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1.35rem;
+  border-radius: 22px;
+  border: 1px solid var(--portal-border-strong);
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(30, 41, 59, 0.05);
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.quickLinkCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(120, 146, 202, 0.95);
+  box-shadow: 0 16px 30px rgba(30, 41, 59, 0.08);
+  text-decoration: none;
+}
+
+.quickLinkTitle {
+  margin: 0;
+  color: var(--portal-text-strong);
+  font-size: 1.14rem;
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+.quickLinkDescription {
+  margin: 0;
+  color: var(--portal-text-soft);
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+.quickLinkAction {
+  color: var(--portal-accent);
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .quickLinksGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .shell {
+    width: calc(100% - 24px);
+  }
+
+  .introActions {
+    flex-direction: column;
+  }
+
+  .primaryAction,
+  .secondaryAction {
+    width: 100%;
+  }
+}

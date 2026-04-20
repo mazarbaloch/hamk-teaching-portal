@@ -1,0 +1,9 @@
+{
+  "label": "Master's Courses",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "Master's Courses",
+    "description": "Graduate-level course spaces with consistent navigation and reusable documentation structure."
+  }
+}

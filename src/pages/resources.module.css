@@ -1,0 +1,23 @@
+.page {
+  background: var(--portal-background);
+}
+
+.shell {
+  width: min(1200px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 2rem 0 5rem;
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+.blockSpacing {
+  margin-top: 1.4rem;
+}
+
+@media (max-width: 640px) {
+  .shell {
+    width: calc(100% - 24px);
+  }
+}

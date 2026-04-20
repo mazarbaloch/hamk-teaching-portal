@@ -1,0 +1,41 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.34rem 0.7rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.level {
+  background: var(--portal-blue-soft);
+  color: var(--portal-blue-strong);
+}
+
+.active {
+  background: rgba(15, 118, 110, 0.12);
+  color: #0f766e;
+}
+
+.planned {
+  background: rgba(194, 120, 3, 0.14);
+  color: #b45309;
+}
+
+.archived {
+  background: rgba(100, 116, 139, 0.14);
+  color: #475569;
+}
+
+.tag {
+  background: var(--portal-surface-muted);
+  color: var(--portal-text-soft);
+}
+
+.resource {
+  background: rgba(29, 78, 216, 0.1);
+  color: #1d4ed8;
+}

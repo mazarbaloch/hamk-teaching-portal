@@ -1,0 +1,33 @@
+---
+title: Teaching Hub
+slug: /
+sidebar_position: 1
+---
+
+# Teaching Hub
+
+This docs space is the content backbone of the teaching portal. Every course lives in its own folder with the same navigation pattern:
+
+- Overview
+- Syllabus
+- Schedule
+- Lectures
+- Labs
+- Assignments
+- Readings
+- FAQ
+
+## How to use this portal
+
+- Use the **Master's Courses** and **Bachelor's Courses** pages for catalog-style browsing.
+- Use the docs sidebar when you want to move inside a specific course.
+- Keep shared material such as checklists, templates, and assessment patterns under **Resources**.
+
+## Recommended authoring workflow
+
+1. Add or update course metadata in `src/data/courses.ts`.
+2. Create or edit the matching docs folder under `docs/masters/` or `docs/bachelors/`.
+3. Keep long-form content here in MDX or Markdown.
+4. Use React components only for reusable user interface patterns or deliberate interactive teaching elements.
+
+This structure is meant to scale across many semesters without pushing teaching content back into monolithic page components.
