@@ -7,7 +7,7 @@ import rehypeKatex from 'rehype-katex';
 const config: Config = {
   title: 'HAMK Teaching Portal',
   tagline: "Master's and Bachelor's course hub",
-  favicon: 'img/favicon.ico',
+  favicon: 'img/HAMK_Logo.png',
   future: {
     v4: true,
   },
@@ -54,7 +54,7 @@ const config: Config = {
         {to: '/bachelors', label: "Bachelor's Courses", position: 'left'},
         {to: '/resources', label: 'Resources', position: 'left'},
         {to: '/about', label: 'About', position: 'left'},
-        {to: '/docs/', label: 'Docs Hub', position: 'right'},
+        {to: '/docs/', label: 'Docs Hub', position: 'right', className: 'navbar-docs-hub'},
       ],
     },
     footer: {
